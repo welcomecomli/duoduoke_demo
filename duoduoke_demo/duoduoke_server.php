@@ -44,7 +44,7 @@ class duoduoke_server_sennd
     public function __construct($config)
     {
         $this->client_id = $config['client_id'];
-        $this->client_secret = $config['client_id'];
+        $this->client_secret = $config['client_secret'];
         $this->url = "https://gw-api.pinduoduo.com/api/router";
     }
 
