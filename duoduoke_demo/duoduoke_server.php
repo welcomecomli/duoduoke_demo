@@ -1,4 +1,5 @@
 <?php
+namespace duoduoke\duoduoke_demo;
 /**
  *
  * Created by PhpStorm.
