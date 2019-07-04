@@ -1,5 +1,6 @@
 {
     "name": "welcomecomli/duoduoke_demo",
+    "description": "多多客API接口-sdk",
     "authors": [
         {
             "name": "Mr Li",
@@ -11,5 +12,8 @@
             "duoduoke\\duoduoke_demo\\": "duoduoke_demo/"
         }
     },
-    "require": {}
+    "require": {
+        "php": ">=7.0",
+        "another-vendor/package": "1.0",
+    }
 }
