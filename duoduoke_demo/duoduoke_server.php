@@ -13,9 +13,9 @@ class duoduoke_server_data{
 
     public $duoduoke_server;  //发送数据对象
 
-    public function __construct()
+    public function __construct($config)
     {
-        $this->duoduoke_server = new duoduoke_server_sennd();
+        $this->duoduoke_server = new duoduoke_server_sennd($config);
     }
 
     /**
@@ -41,10 +41,10 @@ class duoduoke_server_sennd
      */
     public $url;
 
-    public function __construct()
+    public function __construct($config)
     {
-        $this->client_id = "0717de59f9c145ff95282ca510912363";
-        $this->client_secret = "cbc8727cb07cf4393c3698e9eba318a309b1990c";
+        $this->client_id = $config['client_id'];
+        $this->client_secret = $config['client_secret'];
         $this->url = "https://gw-api.pinduoduo.com/api/router";
     }
 
